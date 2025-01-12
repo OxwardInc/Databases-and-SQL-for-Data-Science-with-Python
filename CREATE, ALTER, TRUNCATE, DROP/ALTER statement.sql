@@ -1,0 +1,35 @@
+--  Adding a column
+ALTER TABLE PETSALE
+ADD COLUMN QUANTITY INTEGER;
+
+SELECT * FROM PETSALE;
+
+/*
+Now update the newly added QUANTITY column of the PETSALE table with some 
+values and show all the table records. Copy the code below and paste it into 
+text area of the SQL page. Click Go.
+*/
+
+UPDATE PETSALE SET QUANTITY = 9 WHERE ID = 1;
+UPDATE PETSALE SET QUANTITY = 3 WHERE ID = 2;
+UPDATE PETSALE SET QUANTITY = 2 WHERE ID = 3;
+UPDATE PETSALE SET QUANTITY = 6 WHERE ID = 4;
+UPDATE PETSALE SET QUANTITY = 24 WHERE ID = 5;
+
+SELECT * FROM PETSALE;
+
+-- Deleting a column
+ALTER TABLE PETSALE
+DROP COLUMN PROFIT;
+
+SELECT * FROM PETSALE;
+
+-- Modify a column
+ALTER TABLE PETSALE
+ALTER COLUMN PRT TYPE VARCHAR(20);
+
+-- Rename a Column
+SELECT * FROM PETSALE;
+
+ALTER TABLE PETSALE
+RENAME COLUMN PRT TO PET;

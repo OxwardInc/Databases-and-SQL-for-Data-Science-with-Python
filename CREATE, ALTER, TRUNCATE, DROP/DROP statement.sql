@@ -1,0 +1,5 @@
+--  DROP statement
+
+DROP TABLE PET;
+
+SELECT * FROM PET;
